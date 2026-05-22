@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Residential Interior Design",
+    "slug": "residential-interior-design",
+    "category": "Service",
+    "image": "assets/images/living-soft.webp",
+    "description": "Layered home interiors with spatial planning, material palettes, furniture curation and turnkey execution.",
+    "icon": "home"
+  },
+  {
+    "id": 2,
+    "name": "Commercial Interior Design",
+    "slug": "commercial-interior-design",
+    "category": "Service",
+    "image": "assets/images/office-modern.webp",
+    "description": "Brand-led offices, boutiques and hospitality environments designed for movement, comfort and business outcomes.",
+    "icon": "building-2"
+  },
+  {
+    "id": 3,
+    "name": "The Bhayli Residence",
+    "slug": "bhayli-residence",
+    "category": "Project",
+    "image": "assets/images/project-villa.webp",
+    "description": "A warm modern home with sculptural storage, natural stone and soft lighting transitions.",
+    "icon": "landmark"
+  },
+  {
+    "id": 4,
+    "name": "Material Intelligence",
+    "slug": "material-intelligence",
+    "category": "Blog",
+    "image": "assets/images/blog-materials.webp",
+    "description": "How premium material palettes create calm, depth and longevity in Indian homes.",
+    "icon": "layers"
+  }
+]

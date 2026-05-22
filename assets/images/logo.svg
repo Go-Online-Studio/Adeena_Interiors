@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="212" height="54" viewBox="0 0 212 54" role="img" aria-labelledby="title desc">
+  <title id="title">Adeena Interiors</title>
+  <desc id="desc">Adeena Interiors wordmark with architectural monogram.</desc>
+  <rect width="54" height="54" rx="27" fill="#2F4032"/>
+  <path d="M17 36.5 27 16l10 20.5h-5.1l-2-4.5h-5.8l-2 4.5H17Zm8.6-8.5h2.8L27 24.7 25.6 28Z" fill="#F5EFE6"/>
+  <path d="M68 18.4h7.2l12.4 29.2h-8.4l-2.1-5.2H66l-2 5.2h-8.2L68 18.4Zm6.8 17.8-3.2-8.3-3.3 8.3h6.5ZM92.7 18.6h11.2c9.4 0 15.9 5.9 15.9 14.3v.1c0 8.4-6.5 14.6-16.1 14.6h-11V18.6Zm11.4 21.8c4.4 0 7.4-2.8 7.4-7.2V33c0-4.4-3-7.2-7.4-7.2h-3.4v14.6h3.4ZM125.5 18.6h23.1v6.8h-15.3v4.4h13.8v6.3h-13.8v4.6h15.5v6.9h-23.3v-29ZM154.7 18.6h7.5l11.9 15.3V18.6h7.9v29h-7l-12.4-15.9v15.9h-7.9v-29ZM199.1 18.4h7.2l12.4 29.2h-8.4l-2.1-5.2h-11.1l-2 5.2h-8.2l12.2-29.2Zm6.8 17.8-3.2-8.3-3.3 8.3h6.5Z" transform="scale(.72) translate(74 6)" fill="#243329"/>
+  <text x="68" y="42" font-family="Arial, sans-serif" font-size="9" letter-spacing="3" fill="#A9824A">INTERIORS</text>
+</svg>

@@ -1,0 +1,121 @@
+MASTER WEBSITE CREATION PROMPT — FILL ALL BLANKS FIRST
+═══════════════════════════════════════════════════════
+
+## SYSTEM ROLE
+You are an Elite Senior Frontend Developer and SEO Technical Expert.
+Build a production-ready, multipage, fully responsive website.
+Do NOT skip any requirement. Generate clean, modular, well-commented
+code. Every file must be complete and immediately usable.
+
+═══════════════════════════════════════════════════════
+## 1. PROJECT OVERVIEW
+═══════════════════════════════════════════════════════
+Business Name    : Adeena Interiors
+Industry/Niche   : Interior Design
+Brand Personality: premium & modern
+WhatsApp Number  : 917905791668
+Email : arman07131khan@gmail.com
+Business Address : FF-27, Petal Trillium, Before Navrachna International School 24 Meter High Tension Road, TP2, Bhayli, Vadodara, Gujarat 391410
+Business Hours   : Mon–Sat 09am–09pm
+Pages Required   : Home, About, Services, Gallery, Contact
+Schema Type      : Local Business
+
+═══════════════════════════════════════════════════════
+## 2. DESIGN SYSTEM — STRICT, DO NOT DEVIATE
+═══════════════════════════════════════════════════════
+/* Implement the 60-30-10 colour rule using CSS variables.
+   60% = backgrounds, 30% = text/structure, 10% = accent/buttons */
+
+/* Use clamp() for ALL font sizes. Maintain clear hierarchy. */
+
+UI Mood :Clean, airy, premium
+
+═══════════════════════════════════════════════════════
+## 3. ADVANCED SEO & CORE WEB VITALS — MANDATORY
+═══════════════════════════════════════════════════════
+- Semantic HTML5 only. No div soup.
+- Every page: <title>, <meta name="description">, canonical URL, OG tags, Twitter Card.
+- JSON-LD Schema: Home & Contact → [ SCHEMA TYPE ]. Services → Offer schema.
+- Images: .webp only, loading="lazy" below fold, descriptive alt on every image.
+- LCP < 2.5s: preload hero image + fonts via <link rel="preload">.
+- CLS: explicit width + height on all images and sliders.
+- Accessibility WCAG 2.1: aria-labels on offcanvas, sliders, icon buttons.
+- Defer non-critical JS. Preload Bootstrap CSS + style.css.
+- Target 90+ Lighthouse score.
+
+═══════════════════════════════════════════════════════
+## 4. PAGE ARCHITECTURE — ALL PAGES
+═══════════════════════════════════════════════════════
+<body>
+  <header id="mainNavbar"></header>
+  <main id="page-content">
+    <!-- Page-specific content -->
+  </main>
+  <footer id="footer"></footer>
+</body>
+
+Navbar: Sticky, transparent→solid scroll, Offcanvas mobile,
+active link from URL, --nav-height: max(65px, calc(var(--brand-height) + 16px))
+
+Required Component Functionality
+Non-Shrinking Banner: The Hero must use min-height: calc(100vh - var(--nav-height)) and height: auto. The content within the banner must never shrink below its own height on mobile; it must expand the container vertically to prevent text cut-off.
+.navbar-brand{
+            height: var(--brand-height);
+            padding: 0;
+        }
+        .navbar-brand img{
+            height: 100%;
+            width: auto;
+        }
+
+═══════════════════════════════════════════════════════
+## 5. JAVASCRIPT — MODULAR FILE STRUCTURE
+═══════════════════════════════════════════════════════
+
+FILE: critical.js — navbar inject, footer inject, scroll effect,
+active link, preloader
+
+FILE: script.js — custom cursor, FAB (back-to-top + WhatsApp + Call), Swiper.init, JSON CMS fetch, debounce, passive scroll
+
+FILE: whatsapp.js
+  Mobile  → https://api.whatsapp.com/send?phone=[ NUMBER ]&text=MSG
+  Desktop → https://web.whatsapp.com/send?phone=[ NUMBER ]&text=MSG
+  Detect  → /Mobi|Android/i.test(navigator.userAgent)
+  After send: reset all form fields
+
+FILE: data.json
+  { "id":1, "name":"", "slug":"", "category":"", "image":"", "description":"", "icon":"" }
+  Filter categories: [ LIST CATEGORY NAMES ]
+
+
+═══════════════════════════════════════════════════════
+## 6. RESPONSIVE BREAKPOINTS
+═══════════════════════════════════════════════════════
+991px (tablet) · 767px (mobile L) · 575px (mobile S)
+Hero never compresses. Cards: 3→2→1 col. clamp() padding. 44px touch targets.
+
+═══════════════════════════════════════════════════════
+## 7. ANIMATIONS
+═══════════════════════════════════════════════════════
+fade-up on headings/cards · Card hover lift · Smooth scroll
+Stats counter via IntersectionObserver · No blocking entrance animations
+
+═══════════════════════════════════════════════════════
+## 8. ABSOLUTE RESTRICTIONS
+═══════════════════════════════════════════════════════
+No div soup · No generic UI · No cluttered layouts
+No --accent overuse (<5%)
+No inline structural CSS
+
+═══════════════════════════════════════════════════════
+## 9. FINAL CHECKLIST — VERIFY BEFORE OUTPUT
+═══════════════════════════════════════════════════════
+[ ] JSON-LD Schema on Home + Contact
+[ ] Hero never compresses on mobile
+[ ] WhatsApp detects mobile vs desktop correctly
+[ ] Form resets after submit
+[ ] Active nav link on all pages
+[ ] 90+ Lighthouse score structure
+[ ] Offcanvas has aria-labels
+[ ] Counter on IntersectionObserver
+[ ] Back-to-top after 500px
